@@ -1,0 +1,158 @@
+/* -------- || Estilos Gerais e tipografias ---------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* -------- || HEADER E MENU -----------*/
+
+header {
+    background-image: url('../img/bg-img.jpg');
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+hgroup {
+    margin-top: 250px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 65px;
+}
+
+hgroup h1 {
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+
+hgroup h2 {
+    font-size: 30px;
+}
+
+.bg-shadow {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    opacity: 0.6;
+    background-color: black;
+}
+
+#menu {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#menu nav {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(220, 222, 230);
+    padding: 20px;
+}
+
+#menu p {
+    font-size: 18px;
+}
+
+#menu nav a {
+    color: rgb(220, 222, 230);
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.8s;
+}
+
+#menu nav a:hover {
+    color: cadetblue;
+}
+
+
+
+#redes-sociais i{
+    color: #B3B4B8;
+    font-size: 48px;
+    margin-left: 20px;
+    margin-top: 400px;
+}
+
+/* -------- || SECTION 'SOBRE' -----------*/
+
+#sobre {
+    background-color: #fff;
+    width: 100%;
+    min-height: 800px;
+    margin: 30px auto;
+}
+
+#sobre h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+#sobre p {
+    width: 58%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#historia {
+    margin-top: 35px;
+}
+
+/* -------- || SECTION 'DESAFIO' -----------*/
+
+#desafio {
+    background-color: #EBF6EE;
+    min-height: 600px;
+}
+
+#desafio h2 {
+    padding-top: 60px;
+}
+
+#api {
+    width: 900px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 60px auto;
+}
+
+/* -------- || FOOTER -----------*/
+
+footer {
+    background-color: #373737;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer i {
+    background-color: #fff;
+    color: #373737;
+    font-size: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: -1000px;
+}
