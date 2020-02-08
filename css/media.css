@@ -134,11 +134,11 @@
 
     #redes-sociais i {
         font-size: 42px;
-        margin-top: 224px;
+        margin-top: 170px;
     }
 
     hgroup {
-        margin-top: 190px;
+        margin-top: 120px;
     }
 
     hgroup h1 {
@@ -186,7 +186,7 @@
 
 /* -----------------------Extra Small devices------------------------*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 370px) {
 
     /* -------- || HEADER E MENU -----------*/
 
