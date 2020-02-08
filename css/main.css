@@ -112,3 +112,23 @@ hgroup h2 {
 #historia {
     margin-top: 35px;
 }
+
+/* -------- || SECTION 'DESAFIO' -----------*/
+
+#desafio {
+    background-color: #EBF6EE;
+    min-height: 600px;
+}
+
+#desafio h2 {
+    padding-top: 60px;
+}
+
+#api {
+    width: 900px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 60px auto;
+}
