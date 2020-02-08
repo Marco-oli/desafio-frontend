@@ -1,0 +1,246 @@
+/* -----------------------Large Devices------------------------*/
+
+@media screen and (max-width: 1200px) {
+    
+    /* -------- || HEADER E MENU -----------*/
+
+    #container {
+        overflow: hidden;
+    }
+
+    #menu p {
+        font-size: 32px;
+    }
+
+    #menu nav a {
+        font-size: 28px;
+    }
+
+    #redes-sociais i {
+        font-size: 72px;
+        margin-top: 465px;
+    }
+
+    hgroup {
+        margin-top: 440px;
+    }
+
+    hgroup h1 {
+        font-size: 66px;
+    }
+
+    hgroup h2 {
+        font-size: 38px;
+        margin-top: 30px;
+    }
+
+    /* -------- || SECTION 'SOBRE' -----------*/
+
+    #sobre h2 {
+        font-size: 52px;
+    }
+
+    #sobre p {
+        width: 70%;
+        font-size: 24px;
+    }
+
+    /* -------- || SECTION 'DESAFIO' -----------*/
+
+    #desafio h2 {
+        font-size: 52px;
+    }
+
+    /* -------- || FOOTER -----------*/
+
+    footer i {
+        margin-right: -500px;
+    }
+}
+
+/* -----------------------Medium Devices------------------------*/
+@media screen and (max-width: 768px) {
+
+    /* -------- || HEADER E MENU -----------*/
+
+    #menu nav {
+        align-items: center;
+    }
+
+    #menu p {
+        font-size: 28px;
+    }
+
+    #menu nav a {
+        font-size: 20px;
+    }
+
+    #redes-sociais i {
+        font-size: 52px;
+        margin-top: 366px;
+    }
+
+    hgroup {
+        margin-top: 330px;
+    }
+
+    hgroup h1 {
+        font-size: 46px;
+    }
+
+    hgroup h2 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    /* -------- || SECTION 'SOBRE' -----------*/
+
+    #sobre h2 {
+        font-size: 42px;
+    }
+
+    #sobre p {
+        width: 80%;
+        font-size: 22px;
+    }
+
+    /* -------- || SECTION 'DESAFIO' -----------*/
+
+    #desafio h2 {
+        font-size: 42px;
+    }
+
+    #api {
+        width: 90%;
+    }
+
+    /* -------- || FOOTER -----------*/
+
+    footer i {
+        margin-right: -290px;
+    }
+}
+
+/* -----------------------Small devices------------------------*/
+@media screen and (max-width: 576px) {
+
+    /* -------- || HEADER E MENU -----------*/
+
+    #menu nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #redes-sociais i {
+        font-size: 42px;
+        margin-top: 224px;
+    }
+
+    hgroup {
+        margin-top: 190px;
+    }
+
+    hgroup h1 {
+       font-size: 35px; 
+    }
+
+    hgroup h2 {
+        font-size: 18px;
+    }
+
+    /* -------- || SECTION 'SOBRE' -----------*/
+
+    #sobre h2 {
+        font-size: 36px;
+    }
+
+    #sobre p {
+        width: 88%;
+        font-size: 18px;
+    }
+
+    /* -------- || SECTION 'DESAFIO' -----------*/
+
+    #desafio h2 {
+        font-size: 36px;
+    }
+
+    #api {
+        width: 92%;
+    }
+
+    /* -------- || FOOTER -----------*/
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    footer i {
+        margin: 10px auto;
+        font-size: 26px;
+    }
+}
+
+/* -----------------------Extra Small devices------------------------*/
+
+@media screen and (max-width: 375px) {
+
+    /* -------- || HEADER E MENU -----------*/
+
+    #menu p {
+        font-size: 21px;
+    }
+
+    #menu nav a {
+        font-size: 14px;
+    }
+
+    #redes-sociais i {
+        font-size: 30px;
+        margin-top: 150px;
+    }
+
+    hgroup {
+        margin-top: 118px;
+    }
+
+    hgroup h1 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    hgroup h2 {
+        font-size: 16px;
+    }
+
+    /* -------- || SECTION 'SOBRE' -----------*/
+
+    #sobre h2 {
+        font-size: 30px;
+    }
+
+    #sobre p {
+        width: 88%;
+        font-size: 14px;
+    }
+
+    /* -------- || SECTION 'DESAFIO' -----------*/
+
+    #desafio h2 {
+        font-size: 30px;
+    }
+
+    /* -------- || FOOTER -----------*/
+
+    footer p {
+      font-size: 14px;  
+    }
+
+    footer i {
+        margin: 15px auto;
+        font-size: 21px;
+    }
+}
