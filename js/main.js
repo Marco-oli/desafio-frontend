@@ -30,8 +30,8 @@ const animationClass = 'animate';
 
 function animeScroll() {
     const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
-    target.forEach(function(element) {
-        if(windowTop > element.offsetTop) {
+    target.forEach(function (element) {
+        if (windowTop > element.offsetTop) {
             element.classList.add(animationClass);
         } else {
             element.classList.remove(animationClass);
@@ -41,8 +41,94 @@ function animeScroll() {
 
 animeScroll();
 
-if(target.length) {
-    window.addEventListener('scroll', function(){
+if (target.length) {
+    window.addEventListener('scroll', function () {
         animeScroll();
     })
 }
+
+
+
+// RENDERIZAR  AS TAGS NO HTML
+function renderCard(item) {
+    const divCard = document.getElementById('perfil');
+    const htmlElement = `
+    <h1>${item.name}</h1>
+    <div class="container-repo">
+        <div class="esq">
+            <img src="${item.avatar_url}" alt="">
+            <a href="${item.html_url}" target="_blank">Visitar Perfil</a>
+        </div>
+        <div class="dir">
+            <ul>
+                <li>REPOSITORIOS: ${item.public_repos}</li>
+                <li>SEGUIDORES: ${item.followers}</li>
+                <li>SEGUINDO: ${item.following}</li>
+            </ul>
+            <div class="btn-repo">
+                <button id="btn-esq">Ver Respositorios</button>
+                <button type="button" id="btn-dir">Ver Favoritos</button>
+            </div>
+        </div>
+    </div>
+    <div id="repo-list"></div>
+</div>
+`;
+    divCard.innerHTML = htmlElement;
+}
+
+function renderRepo(item) {
+    const repoDiv = document.getElementById('repo-list');
+    const repoElement = `
+    <h4>LISTA DE REPOSITÓRIOS</h4>
+        <ul>
+            <li>${item[0].name}</li>
+            <li>${item[1].name}</li>
+            <li>${item[2].name}</li>
+            <li>${item[3].name}</li>
+            <li>${item[4].name}</li>
+            <li>${item[5].name}</li>
+        </ul>  
+`;
+    repoDiv.innerHTML = repoElement;
+}
+
+
+// FAZER AS REQUISIÇÕES API
+async function fetchData() {
+    fetch("https://api.github.com/users/qcx").then(response => {
+        if (!response.ok) {
+            throw Error('Error')
+        }
+        return response.json()
+    }).then(data => {
+        console.log(data)
+        renderCard(data)
+    }).catch(error => {
+        console.log(error)
+    })
+}
+
+async function fetchRepo() {
+    fetch("https://api.github.com/users/qcx/repos").then(r => {
+        if (!r.ok) {
+            throw Error('Error')
+        }
+        return r.json()
+    }).then(dados => {
+        renderRepo(dados)
+    }).catch(error => {
+        console.log(error)
+    })
+}
+
+fetchData();
+fetchRepo();
+
+
+
+
+
+
+
+
