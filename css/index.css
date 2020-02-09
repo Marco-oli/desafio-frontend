@@ -117,7 +117,7 @@ hgroup h2 {
 
 #desafio {
     background-color: #EBF6EE;
-    min-height: 85vh;
+    min-height: 100vh;
 }
 
 #desafio h2 {
@@ -181,6 +181,7 @@ hgroup h2 {
     border: 2px solid #97D7AD;
     border-radius: 5px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 #repo-list {
