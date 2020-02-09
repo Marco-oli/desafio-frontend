@@ -50,6 +50,7 @@ if (target.length) {
 
 
 // RENDERIZAR  AS TAGS NO HTML
+
 function renderCard(item) {
     const divCard = document.getElementById('perfil');
     const htmlElement = `
@@ -95,6 +96,7 @@ function renderRepo(item) {
 
 
 // FAZER AS REQUISIÇÕES API
+
 async function fetchData() {
     fetch("https://api.github.com/users/qcx").then(response => {
         if (!response.ok) {
@@ -110,7 +112,7 @@ async function fetchData() {
 }
 
 async function fetchRepo() {
-    fetch("https://api.github.com/users/qcx/repos").then(r => {
+    fetch("https://api.github.com/users/qcx/repos?per_page=7&sort=created:asc").then(r => {
         if (!r.ok) {
             throw Error('Error')
         }
@@ -124,6 +126,10 @@ async function fetchRepo() {
 
 fetchData();
 fetchRepo();
+
+
+
+
 
 
 
