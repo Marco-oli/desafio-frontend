@@ -47,6 +47,10 @@
 
     /* -------- || SECTION 'DESAFIO' -----------*/
 
+    #desafio {
+        min-height: 92vh;
+    }
+
     #desafio h2 {
         font-size: 52px;
     }
@@ -110,6 +114,10 @@
         font-size: 42px;
     }
 
+    #perfil {
+        width: 95%;
+    }
+
     #api {
         width: 90%;
     }
@@ -161,6 +169,10 @@
     }
 
     /* -------- || SECTION 'DESAFIO' -----------*/
+    #desafio {
+        min-height: 100vh;
+        padding-bottom: 2px;
+    }
 
     #desafio h2 {
         font-size: 36px;
@@ -168,6 +180,12 @@
 
     #api {
         width: 92%;
+    }
+
+    .btn-repo input {
+        width: 130px;
+        height: 38px;
+        margin-bottom: 5px;
     }
 
     /* -------- || FOOTER -----------*/
@@ -228,6 +246,14 @@
     }
 
     /* -------- || SECTION 'DESAFIO' -----------*/
+
+    .container-repo {
+        display: block;
+    }
+
+    .dir ul {
+        text-align: center;
+    }
 
     #desafio h2 {
         font-size: 30px;
