@@ -16,6 +16,10 @@ body {
     text-align: center;
 }
 
+#container {
+    overflow: hidden;
+}
+
 /* -------- || HEADER E MENU -----------*/
 
 header {
