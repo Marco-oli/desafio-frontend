@@ -144,7 +144,6 @@ hgroup h2 {
     justify-content: space-evenly;
     align-items: center;
     color: #395442;
-    font-size: #395442;
     font-weight: bold;
 }
 
@@ -172,7 +171,7 @@ hgroup h2 {
     margin-bottom: 65px;
 }
 
-.btn-repo button {
+.btn-repo input {
     width: 200px;
     height: 44px;
     font-size: 16px;
@@ -182,15 +181,17 @@ hgroup h2 {
     border-radius: 5px;
     margin-left: 5px;
     cursor: pointer;
+    outline: none;
 }
 
 #repo-list {
     margin-top: 60px;
     margin-left: 25px;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 #repo-list h4 {
