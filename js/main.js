@@ -1,4 +1,5 @@
 // Scroll Suave no Menu
+
 const menuItens = document.querySelectorAll('#menu nav a');
 
 menuItens.forEach(item => {
@@ -23,7 +24,7 @@ function scrollToPosition(to) {
     });
 }
 
-// Animção da pagina
+// Animação da pagina
 
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
@@ -67,8 +68,8 @@ function renderCard(item) {
                 <li>SEGUINDO: ${item.following}</li>
             </ul>
             <div class="btn-repo">
-                <button id="btn-esq">Ver Respositorios</button>
-                <button type="button" id="btn-dir">Ver Favoritos</button>
+                <input type="button" value="Ver Respositorios" id="btn-esq" onclick="mostrarRepo()"></input>
+                <input type="button" value="Ver Favoritos" id="btn-dir" onclick="mostrarRepo()"></input>
             </div>
         </div>
     </div>
@@ -97,7 +98,7 @@ function renderRepo(item) {
 
 // FAZER AS REQUISIÇÕES API
 
-async function fetchData() {
+function fetchData() {
     fetch("https://api.github.com/users/qcx").then(response => {
         if (!response.ok) {
             throw Error('Error')
@@ -111,7 +112,7 @@ async function fetchData() {
     })
 }
 
-async function fetchRepo() {
+function fetchRepo() {
     fetch("https://api.github.com/users/qcx/repos?per_page=7&sort=created:asc").then(r => {
         if (!r.ok) {
             throw Error('Error')
@@ -126,6 +127,20 @@ async function fetchRepo() {
 
 fetchData();
 fetchRepo();
+
+// EVENTO DO BOTAO NO REPOSITORIO
+
+function mostrarRepo() {
+    const divRepo = document.getElementById('repo-list');
+    
+    if(divRepo.style.display == 'flex') {
+        divRepo.style.display = 'none'
+    } else {
+        divRepo.style.display = 'flex'
+    }
+}
+
+mostrarRepo();
 
 
 
